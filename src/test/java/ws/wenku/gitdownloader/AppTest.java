@@ -43,7 +43,7 @@ public class AppTest
 
     public void testListUrl() {
         App app = new App();
-        List<Item> list = app.listUrl("https://api.github.com/repos/jiaola/gitdownloader/src");
+        List<Item> list = app.listUrl("https://api.github.com/repos/jiaola/gitdownloader/contents/src");
         assertNotNull(list);
         assertEquals(2, list.size());
     }

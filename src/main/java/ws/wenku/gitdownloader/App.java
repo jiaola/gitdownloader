@@ -31,7 +31,7 @@ public class App {
 
     public String getStringFromUrl(String url) {
         String out = null;
-        try (Scanner scanner = new Scanner(new URL("http://www.google.com").openStream(), "UTF-8")) {
+        try (Scanner scanner = new Scanner(new URL(url).openStream(), "UTF-8")) {
             out = scanner.useDelimiter("\\A").next();
         } catch (IOException ex) {
             ex.printStackTrace();
