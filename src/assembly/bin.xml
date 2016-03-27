@@ -23,7 +23,7 @@
             <directory>target</directory>
             <outputDirectory>/</outputDirectory>
             <includes>
-                <include>gitdownloader-${version}.jar</include>
+                <include>gitdownloader-${project.version}.jar</include>
             </includes>
         </fileSet>
     </fileSets>
