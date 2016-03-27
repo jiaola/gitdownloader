@@ -66,6 +66,6 @@ public class AppTest extends TestCase {
         boolean result = app.downloadDir(url, tempDir);
         assertTrue(result);
         File[] dirs = tempDir.listFiles(File::isDirectory);
-        assertEquals(2, dirs.length);
+        assertEquals(3, dirs.length);
     }
 }
