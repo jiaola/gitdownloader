@@ -45,7 +45,7 @@ public class AppTest extends TestCase {
         App app = new App();
         List<Item> list = app.listUrl("https://api.github.com/repos/jiaola/gitdownloader/contents/src");
         assertNotNull(list);
-        assertEquals(2, list.size());
+        assertEquals(3, list.size());
     }
 
     public void testDownloadUrl() throws Exception {
